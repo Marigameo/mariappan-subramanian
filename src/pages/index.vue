@@ -25,7 +25,7 @@
           </div>
           
           <div class="left-column">
-            <img id="profile_pic" src="../assets/profile.png" alt="Smile Gupta" />
+            <img id="profile_pic" src="../assets/profile.svg" alt="Smile Gupta" />
           </div>
 
           <div class="right-column">

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   typescript: { strict: true, typeCheck: true, shim: false },
   nitro: {
     prerender: {
-      routes: ['/', '/data/starters.json', '/data/themes.json']
+      routes: ['/', '/data/blogs.json', '/data/companies.json', '/data/talks.json', '/data/projects.json']
     }
   },
   image: {
