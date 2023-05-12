@@ -20,11 +20,13 @@ const featuredProjects = items.value.filter(item => item.isFeatured);
         <span class="sr-only">about {{ item.title }} starter</span>
       </p>
       <div class="flex items-center">
-        <a target="_blank" href="https://github.com/nuxt" class="p-2">
+        <a target="_blank" :href="item['github']" class="p-2" v-if="item.github">
       <span class="sr-only">Nuxt GitHub organization</span>
       <svg class="w-5 h-5" alt=""><use xlink:href="#github" /></svg>
     </a>
-    <svg class="w-5 h-5" alt=""><use xlink:href="#external" /></svg>
+    <a :href="item['live']" target="_blank">
+      <svg class="w-5 h-5" alt=""><use xlink:href="#external" /></svg>
+    </a>
       </div>
     </article>
   </div>
