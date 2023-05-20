@@ -11,9 +11,9 @@ const featuredProjects = items.value.filter(item => item.isFeatured);
       class="rounded-lg border-[2px] px-4 py-4 bg-gradient-to-r from-[rgba(24,24,27,0.65)] backdrop-blur-sm to-transparent border border-gray-800 hover:border-gray-500 hover:shadow-lg transition duration-300 ease-in-out"
     >
       <div class="text-lg orange-text flex flex-row gap-2 items-center hover:text-orange-300">
-        <span>
+        <a :href="item['live']" target="_blank">
           {{ item.title }}
-        </span>
+        </a>
       </div>
       <p class="font-thin">
         {{ item.description }}
