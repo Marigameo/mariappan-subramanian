@@ -11,16 +11,18 @@ const { data: items } = await useFetch('/data/talks.json')
       <TheHeader class="xl:mt-4" />
       <section class="s1">
       <div class="main-container mt-6">
-    <a v-for="item in items" :href="item['slides']" target="_blank" class="mb-4 block">
+    <template v-for="item in items" class="mb-4 block">
         <div class="flex items-center">
+          <a :href="item['slides']" target="_blank">
             <h3 class="text-lg orange-text">{{ item.title }}</h3>
+          </a>
             <svg class="w-4 h-4 ml-2" alt=""><use xlink:href="#external" /></svg>
         </div>
         <p>{{ item.description }}</p>
         <a :href="item['recording']" target="_blank" class="blue-text my-2 flex items-center underline" v-if="item['recording']">Recording <svg class="w-4 h-4 ml-2" alt=""><use xlink:href="#external" /></svg></a>
         <p class="yellow-text"><i>{{ item.date }}</i><span class="green-text ml-4">{{ item.city }}</span></p>
         <hr class="mt-4"/>
-    </a>
+    </template>
     </div>
     </section>
     </div>
