@@ -1,5 +1,19 @@
 export default defineEventHandler((): Talks[] => [
   {
+    title: 'CSS Wrapped: 2023',
+    description:
+      "This talk presents about the Interoperability - the ability of digital platforms/systems to work the same way everywhere. We'll explore new css features introduced and also learn why it's important to keep track of such advancements.",
+    image: '/previews/react-meetup-atlassian.jpeg',
+    recording: 'https://youtu.be/Dh3WTd8os0k?si=ozSn624GKqOI6mhU',
+    slides:
+      'https://www.canva.com/design/DAF4Ej-tEFE/28i751FSo8hodKp37Muy9g/edit?utm_content=DAF4Ej-tEFE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+    date: 'Jul 07-08, 2023',
+    city: 'Atlassian, Bangalore',
+    github: '',
+    live: 'https://youtu.be/1wn9Ox7Fa0I?si=jHHsNan-x1zuowp1',
+    isFeatured: true,
+  },
+  {
     title: 'Streaming SSR simplified with Next.JS',
     description:
       "What if we could amplify the process by server rendering data in chunks - you decide what to render first? In this talk, we'll explore how streaming in Next could be a game changer leveraging the power of server components & suspense.",
@@ -8,7 +22,7 @@ export default defineEventHandler((): Talks[] => [
     slides:
       'https://drive.google.com/file/d/1XYKsAuleeNpGK913akIszkB4ex1oPOjg/view?usp=sharing',
     date: 'Jul 07-08, 2023',
-    city: 'Bangalore',
+    city: 'React Nexus 2023, Bangalore',
     github: '',
     live: '',
     isFeatured: true,
